@@ -4,12 +4,11 @@ import styled from 'styled-components'
 
 export default class ModalComponent extends PureComponent {
   setCustomPlayback = ({ target: { value } }) => {
-    console.log(value)
     this.props.setSpeed(value)
   }
 
   render () {
-    const { open, toggle, videos } = this.props
+    const { open, toggle, videos, detect } = this.props
 
     return (
       <Motion
@@ -31,13 +30,25 @@ export default class ModalComponent extends PureComponent {
               <Title>Fast Flix 🍿</Title>
 
               {
-                videos.length && (
-                  <Row>
-                    <div>Custom playback speed</div>
-                    <Input type='number' onChange={this.setCustomPlayback} placeholder='1.00' />
-                  </Row>
+                videos.length > 0 && (
+                  <div>
+                    <Row>
+                      <div>Custom playback speed</div>
+                      <Input type='number' onChange={this.setCustomPlayback} placeholder='1.00' />
+                    </Row>
+                    <br />
+                  </div>
                 )
               }
+
+              <Row>
+                <div>Videos detected:</div>
+                <div>{videos.length}</div>
+              </Row>
+
+              <br />
+
+              <button onClick={detect}>Detect Videos</button>
 
               <p>For the extension to work properly, you'll need to make sure the video is already loaded on the website. Do to some limitations we can't preemptively set playback speed. Like the extension? Leave a review, star it on github</p>
             </Modal>

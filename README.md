@@ -1,10 +1,10 @@
-## FastFlix 🍿
+## Fast Flix 🍿
 
 Set playback speed of any HTML5 video on the internet from the convience of a chrome extension.
 
 All information stays local, extension is just a few lines of JavaScript. 🎉
 
-[Chrome Store](https://chrome.google.com/webstore/detail/dffakiimcpeogagieklcdchklmghdnhd) | [Landing Page](https://jackhanford.com/fastflix)
+[Chrome Store](https://chrome.google.com/webstore/detail/dffakiimcpeogagieklcdchklmghdnhd) | [Landing Page](https://jackhanford.com/fast-flix)
 
 #### Building
 Simply install the dependencies, and toss the `./dist/` folder into `chrome://extensions`
@@ -22,7 +22,7 @@ And open `https://localhost:9966`
 
 <br />
 
-Questions? Feedback? [Please let me know](https://github.com/hanford/fastflix/issues/new)
+Questions? Feedback? [Please let me know](https://github.com/hanford/fast-flix/issues/new)
 
 ## License (MIT)
 

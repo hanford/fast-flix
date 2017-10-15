@@ -38,12 +38,18 @@ export default class SpeedFrame extends PureComponent {
     videos.forEach(v => v.playbackRate = speed)
   }
 
+  detect = () => {
+    const videos = document.querySelectorAll('video')
+
+    console.log(videos)
+
+    this.setState({ videos })
+  }
+
   componentDidMount () {
     window[FRAME_TOGGLE_FUNCTION] = this.toggleFrame
 
-    const videos = document.querySelectorAll('video')
-
-    this.setState({ videos })
+    this.detect()
   }
 
   toggleFrame = () => {
@@ -80,6 +86,7 @@ export default class SpeedFrame extends PureComponent {
           toggle={this.toggleInfo}
           videos={videos}
           setSpeed={this.setSpeed}
+          detect={this.detect}
         />
       </Container>
     )
