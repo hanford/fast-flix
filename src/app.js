@@ -41,7 +41,7 @@ export default class SpeedFrame extends PureComponent {
   detect = () => {
     const videos = document.querySelectorAll('video')
 
-    console.log(videos)
+    console.log({ videos })
 
     this.setState({ videos })
   }

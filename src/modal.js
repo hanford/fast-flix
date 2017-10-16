@@ -42,15 +42,17 @@ export default class ModalComponent extends PureComponent {
               }
 
               <Row>
-                <div>Videos detected:</div>
+                <div>Videos detected</div>
                 <div>{videos.length}</div>
+              </Row>
+              <Row>
+                <div>Check out the code</div>
+                <div><a href='https://github.com/hanford/fast-flix' target='_blank'>Github</a></div>
               </Row>
 
               <br />
 
               <button onClick={detect}>Detect Videos</button>
-
-              <p>For the extension to work properly, you'll need to make sure the video is already loaded on the website. Do to some limitations we can't preemptively set playback speed. Like the extension? Leave a review, star it on github</p>
             </Modal>
           </Overlay>
         )}
@@ -79,7 +81,7 @@ const Modal = styled.div`
   width: 500px;
   transform-origin: center;
   background-color: white;
-  padding: 10px;
+  padding: 16px;
   border-radius: 4px;
   font-size: 16px;
 `

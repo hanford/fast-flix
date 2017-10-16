@@ -6,6 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "build": "npm run webpack",
+    "build-production": "npm run webpack -- -p",
     "watch": "npm run webpack -- -w"
   },
   "author": "jackhanford@gmail.com",
