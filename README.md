@@ -4,7 +4,7 @@ Set playback speed of any HTML5 video on the internet from the convience of a ch
 
 All information stays local, extension is just a few lines of JavaScript. 🎉
 
-[Chrome Store](https://chrome.google.com/webstore/detail/dffakiimcpeogagieklcdchklmghdnhd) | [Landing Page](https://jackhanford.com/fast-flix)
+[Chrome Store](https://chrome.google.com/webstore/detail/ldcailklfommolipjecojcgodjdoaedi) | [Landing Page](https://jackhanford.com/fast-flix)
 
 #### Building
 Simply install the dependencies, and toss the `./dist/` folder into `chrome://extensions`
