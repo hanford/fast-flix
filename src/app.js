@@ -28,8 +28,10 @@ export default class SpeedFrame extends PureComponent {
   }
 
   setAndForget = speed => {
-    this.setSpeed(speed)
-    this.toggleFrame()
+    this.detect(() => {
+      this.setSpeed(speed)
+      this.toggleFrame()
+    })
   }
 
   setSpeed = speed => {
@@ -38,12 +40,12 @@ export default class SpeedFrame extends PureComponent {
     videos.forEach(v => v.playbackRate = speed)
   }
 
-  detect = () => {
+  detect = (callback) => {
     const videos = document.querySelectorAll('video')
 
     console.log({ videos })
 
-    this.setState({ videos })
+    this.setState({ videos }, callback)
   }
 
   componentDidMount () {
