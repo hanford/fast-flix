@@ -45,6 +45,7 @@ export default class ModalComponent extends PureComponent {
                 <div>Videos detected</div>
                 <div>{videos.length}</div>
               </Row>
+
               <Row>
                 <div>Check out the code</div>
                 <div><a href='https://github.com/hanford/fast-flix' target='_blank'>Github</a></div>

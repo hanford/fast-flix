@@ -41,10 +41,10 @@ export default class FabFan extends PureComponent {
         styles={this.nextStyle}
       >
         {
-          interpolatingStyles => (
+          styles => (
             <Container>
               {
-                interpolatingStyles.map(({ springIn }, i) => (
+                styles.map(({ springIn }, i) => (
                   <Button
                     key={i}
                     onClick={optsWithStyle[i].onClick}

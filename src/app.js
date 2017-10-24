@@ -40,10 +40,8 @@ export default class SpeedFrame extends PureComponent {
     videos.forEach(v => v.playbackRate = speed)
   }
 
-  detect = (callback) => {
+  detect = callback => {
     const videos = document.querySelectorAll('video')
-
-    console.log({ videos })
 
     this.setState({ videos }, callback)
   }
