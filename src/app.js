@@ -14,6 +14,7 @@ export default class SpeedFrame extends PureComponent {
     btns: [
       {name: '0.75x', onClick: () => this.setAndForget(0.75), background: '#F8B195'},
       {name: '1x', onClick: () => this.setAndForget(1), background: '#F67280'},
+      {name: '1.15x', onClick: () => this.setAndForget(1.15), background: '#1DAAE2'},
       {name: '1.25x', onClick: () => this.setAndForget(1.25), background: '#C06C84'},
       {name: '1.5x', onClick: () => this.setAndForget(1.5), background: '#6C5B7B'},
       {name: '2x', onClick: () => this.setAndForget(2), background: '#355C7D'},
